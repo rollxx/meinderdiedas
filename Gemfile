@@ -8,8 +8,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem "paper_trail"
-gem "rails_admin"
+gem 'paper_trail'
+gem 'rails_admin'
 gem 'bootstrap-sass'
 gem 'cancan'
 gem 'devise'
