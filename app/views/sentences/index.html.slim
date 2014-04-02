@@ -1,0 +1,21 @@
+h1 Listing sentences
+
+table
+  thead
+    tr
+      th Text
+      th
+      th
+      th
+
+  tbody
+    - @sentences.each do |sentence|
+      tr
+        td = sentence.text
+        td = link_to 'Show', sentence
+        td = link_to 'Edit', edit_sentence_path(sentence)
+        td = link_to 'Destroy', sentence, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Sentence', new_sentence_path
